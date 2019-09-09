@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/*全称セレクタ*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ;
+    list-style-type: none;
+    font-size: 100%;
+}
+/*共通レイアウト*/
+#container{
+    width: 1170px;
+    margin: 0 auto;
+
+}
+/*画像の下に隙間が空くのを修正*/
+img{
+    vertical-align: bottom;
+}
+/*リンクの下線を消す*/
+a{
+    text-decoration: none;
+}
+#header{
+    width: 900px;
+    margin: 0 auto;
+}
+#head-top{
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    height: 100px;
+    }
+#logo{
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+}
+#title{
+    font-size: 0.7em;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+#name a{
+    color: #4169e1;
+    font-size: 1.8em;
+}
+#gb_nav{
+    overflow: hidden;
+    width: 900px;
+    margin-bottom: 2em;
+
+}
+#gb_nav li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    }
+.btn{
+  width: 95%;
+  height: 40px;
+  color: white;
+  display: inline-block;
+  opacity: 0.7;
+  border-radius: 4px;
+  padding-top: 15px;
+  transition: all 0.5s
+}
+.btn:hover {
+    opacity: 1;
+  }
+.top{
+    background-color: #0D3B66;
+}
+.course{
+    background-color: #4da6ff;
+}
+.acsess{
+    background-color: #4da6ff;
+}
+.contact{
+    background-color: #4da6ff;
+}
+
+/*ここからコース紹介ページ*/
+#course_contents{
+    width: 900px;
+    height: 700px;
+    margin-top: 2em;
+    margin: 0 auto;
+    /*background-color: pink;*/
+}
+.introduction{
+    font-size: 1.5em;
+    border-left: double 10px #1862ed;
+    padding-left: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+    overflow: hidden;
+    font-weight: lighter;
+
+    /*background-color: red;*/
+}
+.department{
+  width:830px;
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+.department a{
+  padding-top: 2.5em;
+}
+.course_btn{
+  width: 150px;
+  height: 80px;
+  color: black;
+  display: inline-block;
+  opacity: 0.75;
+  border-radius: 4px;
+  transition: all 0.5s;
+  float: left;
+  margin: 0.5em;
+  text-align: center;
+
+}
+.course_btn:hover {
+    opacity: 1;
+}
+.clear_box{
+    clear: left;
+}
+.yousetu{
+  background-color: #7b9ad0;
+}
+.cad{
+  background-color: #f8e352;
+}
+.kikai{
+  background-color: #c8d627;
+}
+.mono{
+  background-color: #d5848b;
+}
+.buil{
+  background-color: #e5ab47;
+}
+.kanri{
+  background-color: #e1cea3;
+}
+.setubi{
+  background-color: #51a1a2;
+}
+.seigyo{
+  background-color: #b1d7e4;
+}
+.iot{
+  background-color: #66b7ec;
+}
+.it{
+  background-color: #ae8dbc;
+}
+
+
+#footer{
+  clear: left;
+  background-color: #5270cc;
+  color: #ffffff;
+  font-size:0.8em;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}

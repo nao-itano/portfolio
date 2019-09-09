@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*全称セレクタ*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ;
+    list-style-type: none;
+    font-size: 100%;
+}
+/*共通レイアウト*/
+#container{
+    width: 1170px;
+    margin: 0 auto;
+
+}
+/*画像の下に隙間が空くのを修正*/
+img{
+    vertical-align: bottom;
+}
+/*リンクの下線を消す*/
+a{
+    text-decoration: none;
+}
+#header{
+    width: 900px;
+    margin: 0 auto;
+}
+#head-top{
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    height: 100px;
+    }
+#logo{
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+}
+#title{
+    font-size: 0.7em;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+#name a{
+    color: #4169e1;
+    font-size: 1.8em;
+}
+#gb_nav{
+    overflow: hidden;
+    width: 900px;
+    margin-bottom: 2em;
+
+}
+#gb_nav li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    }
+.btn{
+  width: 95%;
+  height: 40px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  padding-top: 15px;
+  transition: all 0.5s
+}
+.btn:hover {
+    opacity: 1;
+  }
+.top{
+    background-color: #0D3B66;
+}
+.course{
+    background-color: #4da6ff;
+}
+.acsess{
+    background-color: #4da6ff;
+}
+.contact{
+    background-color: #4da6ff;
+}
+.clear_box{
+    clear: left;
+}
+.introduction{
+    font-size: 1.5em;
+    border-left: double 10px #1862ed;
+    padding-left: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+    overflow: hidden;
+    font-weight: lighter;
+
+    /*background-color: red;*/
+}
+.contact_form{
+    width: 900px;
+    margin: 0 auto;
+}
+.contact_content{
+    margin-left: 3em;
+    width: 500px;
+    margin: 0 auto;
+}
+.contact_icon img{
+    width: 50px;
+    float: left;
+    margin-top: 2em;
+}
+.contact_category{
+    font-size: 1.2em;
+    padding-top: 3em;
+    padding-left: 3em;
+}
+.contact_item{
+    margin: 1em 0 2em 2em;
+    line-height: 2em;
+}
+input{
+    width: 250px;
+}
+textarea {
+    width: 400px;
+    height: 10em;
+    }
+.mail{
+    margin: 2em 0 10em 2em;
+}
+#footer{
+    clear: left;
+    background-color: #5270cc;
+    color: #ffffff;
+    font-size:0.8em;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }

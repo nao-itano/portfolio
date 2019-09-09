@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/*全称セレクタ*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ;
+    list-style-type: none;
+    font-size: 100%;
+}
+/*共通レイアウト*/
+#container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/*画像の下に隙間が空くのを修正*/
+img{
+    vertical-align: bottom;
+}
+/*リンクの下線を消す*/
+a{
+    text-decoration: none;
+}
+#header{
+    width: 900px;
+    margin: 0 auto;
+}
+#head-top{
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    height: 100px;
+    }
+#logo{
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+}
+#title{
+    font-size: 0.7em;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+#name a{
+    color: #4169e1;
+    font-size: 1.8em;
+}
+#gb_nav{
+    overflow: hidden;
+    width: 900px;
+    margin-bottom: 2em;
+}
+
+#gb_nav li{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.btn{
+    width: 95%;
+    height: 40px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    padding-top: 15px;
+    transition: all 0.5s
+}
+.btn:hover {
+    opacity: 1;
+  }
+.top{
+    background-color: #0D3B66;
+}
+.course{
+    background-color: #4da6ff;
+}
+.acsess{
+    background-color: #4da6ff;
+}
+.contact{
+    background-color: #4da6ff;
+}
+
+.top-wrapper{
+    width: 900px;
+    height: 450px;
+    margin-bottom:2em;
+}
+
+.top-wrapper p{
+    margin-top: 30px;
+    opacity: 0.9;
+    padding-left: 1em;
+}
+
+#content{
+    width: 900px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+#main_contents{
+    overflow: hidden;
+    }
+
+.item{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-bottom: 3px;
+    position: relative;
+}
+
+.item a{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+    transition: all 0.5s;
+    padding-top: 1em;
+}
+
+.item a:hover{
+    background-color: rgba(100,149,237,0.2);
+}
+
+.item_title{
+    height: 40px;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.item_title h3{
+    font-weight: lighter;
+}
+.icon{
+    float: left;
+
+}
+.icon img{
+    width: 150px;
+    height: auto;
+    padding-left: 2.5em;
+}
+
+.txt-contents {
+    width: 80%;
+    display: inline-block;
+    height: 100px;
+    margin-top: 20px;
+    text-align: left;
+}
+.short{
+    margin-top: 1.7em;
+}
+.box{
+    padding-bottom: 2em;
+}
+.box2{
+    padding-bottom: 0.5em;
+}
+
+.clear_box{
+    clear: left;
+}
+#footer{
+    clear: left;
+    background-color: #5270cc;
+    color: #ffffff;
+    font-size:0.8em;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }

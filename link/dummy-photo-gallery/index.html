@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dummy Photo Gallery - 架空の写真ギャラリー</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+</head>
+<body>
+  <header class="l-header">
+    <div class="l-wrapper">
+      <h1 class="l-header-title">
+        <span class="screen-reader-text" lang="en">Dummy Photo Gallery</span>
+        <a href="./"><img src="images/logo-primary.png" srcset="images/logo-primary.png 1x, images/logo-primary@2x.png 2x" alt="Dummy Photo Gallery"></a>
+      </h1>
+
+      <nav class="l-header-nav">
+        <h2 class="screen-reader-text">サイト内メニュー</h2>
+        <button type="button" class="js-button-hamburger button-hamburger" aria-controls="global-nav" aria-expanded="false">
+          <!-- aria-controlsどこが動くところか？aria-expanded閉じている状態-->
+          <span class="hamburger">
+            <span class="screen-reader-text">メニューを開閉する</span>
+          </span>
+        </button>
+        <ul id="global-nav" class="l-global-nav" lang="en">
+          <li><a href="#">All</a></li>
+          <li><a href="#">Mountain</a></li>
+          <li><a href="#">Ocean</a></li>
+          <li><a href="#">River</a></li>
+          <li><a href="#">Lake</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /.l-wrapper -->
+  </header>
+  <main class="l-main">
+    <div class="hero hero-home">
+      <picture class="hero-image">
+        <source srcset="images/hero-top-sp.jpg, images/hero-top-sp@2x.jpg 2x" media="(max-width:767px)">
+        <source srcset="images/hero-top-tab.jpg, images/hero-top-tab@2x.jpg 2x" media="(max-width:1023px)">
+        <img src="images/hero-top-pc.jpg" srcset="images/hero-top-pc.jpg, images/hero-top-pc@2x.jpg 2x" alt="川で寄り添う男女">
+      </picture>
+      <div class="hero-body">
+        <p class="hero-copy" lang="en">The Picture Taken By Me is<em class="hero-emphasis">Beautiful</em></p>
+      </div>
+      <!-- /.hero-body メンテナンス性-->
+    </div>
+    <!-- /.hero hero-home -->
+    <section class="l-section">
+      <div class="l-wrapper">
+        <h2 class="heading-primary">
+          <span lang="en">Latest Photos</span><br><span class="heading-caption">最新の写真</span></h2>
+        <ol class="l-grid">
+          <li class="l-grid-item">
+            <a href="images/thumbnail1@2x.jpg" class="card">
+              <figure class="card-thumbnail">
+                <img src="images/thumbnail1.jpg" srcset="images/thumbnail1.jpg 1x, images/thumbnail1@2x.jpg 2x" alt="青く澄んだ水に横に広がる滝">
+                <figcaption>きれいな滝</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="l-grid-item">
+            <a href="images/thumbnail2@2x.jpg" class="card">
+              <figure class="card-thumbnail">
+                <img src="images/thumbnail2.jpg" srcset="images/thumbnail2.jpg 1x, images/thumbnail2@2x.jpg 2x" alt="山の上にある鉄橋を走る機関車">
+                <figcaption>高いところの機関車</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="l-grid-item">
+            <a href="images/thumbnail3@2x.jpg" class="card">
+              <figure class="card-thumbnail">
+                <img src="images/thumbnail3.jpg" srcset="images/thumbnail3.jpg 1x, images/thumbnail3@2x.jpg 2x" alt="きれいな夕日に写る鳥と一本の木">
+                <figcaption>きれいな夕日</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="l-grid-item">
+            <a href="images/thumbnail4@2x.jpg" class="card">
+              <figure class="card-thumbnail">
+                <img src="images/thumbnail4.jpg" srcset="images/thumbnail4.jpg 1x, images/thumbnail4@2x.jpg 2x" alt="高いところから見下ろした都会の夜景">
+                <figcaption>きれいな夜景</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="l-grid-item">
+            <a href="images/thumbnail5@2x.jpg" class="card">
+              <figure class="card-thumbnail">
+                <img src="images/thumbnail5.jpg" srcset="images/thumbnail5.jpg 1x, images/thumbnail5@2x.jpg 2x" alt="すこし逆光がまぶしい桟橋のある海">
+                <figcaption>きれいな景色</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="l-grid-item">
+            <a href="images/thumbnail6@2x.jpg" class="card">
+              <figure class="card-thumbnail">
+                <img src="images/thumbnail6.jpg" srcset="images/thumbnail6.jpg 1x, images/thumbnail6@2x.jpg 2x" alt="山の中にある小川の横にある小屋">
+                <figcaption>山の中の小屋</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="l-grid-item">
+            <a href="images/thumbnail7@2x.jpg" class="card">
+              <figure class="card-thumbnail">
+                <img src="images/thumbnail7.jpg" srcset="images/thumbnail7.jpg 1x, images/thumbnail7@2x.jpg 2x" alt="雲よりも高い山から撮影した、とてもきれいなご来光">
+                <figcaption>きれいなご来光</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="l-grid-item">
+            <a href="images/thumbnail8@2x.jpg" class="card">
+              <figure class="card-thumbnail">
+                <img src="images/thumbnail8.jpg" srcset="images/thumbnail8.jpg 1x, images/thumbnail8@2x.jpg 2x" alt="雪山の中で両手を広げる少女">
+                <figcaption>雪の女王</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="l-grid-item">
+            <a href="images/thumbnail9@2x.jpg" class="card">
+              <figure class="card-thumbnail">
+                <img src="images/thumbnail9.jpg" srcset="images/thumbnail9.jpg 1x, images/thumbnail9@2x.jpg 2x" alt="山の上にある小岩に腰掛けて、ギターを引く男性">
+                <figcaption>ギタリストと湖</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="l-grid-item">
+            <a href="images/thumbnail10@2x.jpg" class="card">
+              <figure class="card-thumbnail">
+                <img src="images/thumbnail10.jpg" srcset="images/thumbnail10.jpg 1x, images/thumbnail10@2x.jpg 2x" alt="いまにも襲いかかりそうな下をペロっとしたライオン">
+                <figcaption>ライオンキング</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="l-grid-item">
+            <a href="images/thumbnail11@2x.jpg" class="card">
+              <figure class="card-thumbnail">
+                <img src="images/thumbnail11.jpg" srcset="images/thumbnail11.jpg 1x, images/thumbnail11@2x.jpg 2x" alt="どこかの星から地球を眺める猿4匹">
+                <figcaption>猿の惑星</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="l-grid-item">
+            <a href="images/thumbnail12@2x.jpg" class="card">
+              <figure class="card-thumbnail">
+                <img src="images/thumbnail12.jpg" srcset="images/thumbnail12.jpg 1x, images/thumbnail12@2x.jpg 2x" alt="波が強い桟橋のある海">
+                <figcaption>きれいな海</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ol>
+        <p class="l-section-button">
+          <a href="#" class="button button-primary">写真をもっと見る</a>
+        </p>
+      </div>
+      <!-- /.l-wrapper -->
+    </section>
+  </main>
+
+  <footer class="l-footer">
+    <div class="l-wrapper">
+      <address class="l-footer-address">
+        <span lang="en" class="screen-reader-text">Dummy Photo Gallery</span>
+        <a href="mailto:info@dummy.jp" class="logo-secondary">
+          <img src="images/logo-secondary.png" srcset="images/logo-secondary.png 1x, images/logo-secondary@2x.png 2x" alt="Dummy Photo Gallery">
+        </a><br>
+        〒500-0000 大阪府架空市架空町1-1-1<br>
+        TEL : 06-1234-5678
+      </address>
+      <p class="l-footer-copyright" lang="en"><small>&copy; 2017 <a href="mailto:info@dummy.jp">Dummy Photo Gallery</a>.</small></p>
+    </div>
+    <!-- /.l-wrapper -->
+  </footer>
+  <script src="js/lib/jquery-1.12.1.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

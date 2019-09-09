@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/*全称セレクタ*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ;
+    list-style-type: none;
+    font-size: 100%;
+}
+/*共通レイアウト*/
+#container{
+    width: 1170px;
+    margin: 0 auto;
+
+}
+/*画像の下に隙間が空くのを修正*/
+img{
+    vertical-align: bottom;
+}
+/*リンクの下線を消す*/
+a{
+    text-decoration: none;
+}
+#header{
+    width: 900px;
+    margin: 0 auto;
+}
+#head-top{
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    height: 100px;
+    }
+#logo{
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+}
+#title{
+    font-size: 0.7em;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+#name a{
+    color: #4169e1;
+    font-size: 1.8em;
+}
+#gb_nav{
+    overflow: hidden;
+    width: 900px;
+    margin-bottom: 2em;
+
+}
+#gb_nav li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    }
+.btn{
+  width: 95%;
+  height: 40px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  padding-top: 15px;
+  transition: all 0.5s
+}
+.btn:hover {
+    opacity: 1;
+  }
+.top{
+    background-color: #0D3B66;
+}
+.course{
+    background-color: #4da6ff;
+}
+.acsess{
+    background-color: #4da6ff;
+}
+.contact{
+    background-color: #4da6ff;
+}
+.clear_box{
+    clear: left;
+}
+
+/*ここからitseisan*/
+#department_main{
+    width: 900px;
+    margin: 0 auto;
+}
+.department_icon{
+    float: left;
+    margin-bottom: 3em;
+}
+#department_main h2{
+    padding-left: 0.5em;
+    padding-top: 2em;
+    font-size: 1.5em;
+}
+.department_name{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    margin-left: 0.3em;
+}
+
+.file{
+    float: left;
+    padding-right: 5px;
+}
+.file_name{
+    /*padding-top: 5px;*/
+    font-weight: normal;
+    font-size: 1.5em;
+}
+.file_title{
+    width: 95%;
+    margin: 0 auto;
+}
+.file_contents{
+    width: 90%;
+    margin: 1em auto 1.5em auto;
+}
+.item_contents{
+    margin:3em 0.5em 0.5em 0;
+}
+.small{
+    color: #333333;
+    width: 90%;
+}
+hr{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+#footer{
+    clear: left;
+    background-color: #5270cc;
+    color: #ffffff;
+    font-size:0.8em;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }

@@ -1,0 +1,568 @@
+@charset "UTF-8";
+
+/* ===============================================
+Base
+=============================================== */
+
+/*
+  Reset
+----------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ===============================================
+Body
+=============================================== */
+body {
+  font-family: 'Robot', 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  color: #212121;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.container {
+  clear: both;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  padding-bottom: 10em;
+  margin-top: 5em;
+  clear: both;
+}
+
+.section:after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom:0;
+  margin: 0 auto;
+  width: 2px;
+  height: 80px;
+  background-color: #212121;
+}
+
+/*
+  Header
+----------------------------------------------- */
+#header {
+  overflow: hidden;
+}
+
+.logo-primary {
+  float: left;
+  padding: 1.25em 0;
+}
+
+/*------------------------------
+  nav
+-------------------------------*/
+
+.header-nav {
+  float: right;
+}
+
+.header-nav ul {
+  overflow: hidden;
+}
+
+.header-nav li {
+  float: left;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+
+
+.header-nav a {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  color: #212121;
+  padding: 1.75em 0;
+  letter-spacing: .08em;
+}
+
+.nav-border a {
+  border-bottom: 5px solid transparent;
+  padding-bottom: 1em;
+}
+.nav-border a:hover {
+  border-bottom: 5px solid #212121;
+}
+a.is-active {
+  border-color: #212121;
+}
+
+/*------------------------------
+  contact
+-------------------------------*/
+.header-nav li:last-child {
+  background-color: #212121;
+  padding: 0 1.75em;
+  margin-left: 1.75em;
+  border: none;
+}
+
+.header-nav li:last-child:hover {
+  background-color: #666;
+}
+.contact{
+  color: #fff;
+}
+
+/*
+  Main
+----------------------------------------------- */
+.main-container {
+  width: 800px;
+  margin: 0 auto;
+
+}
+
+#main h1 {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: .2em;
+  line-height: 2;
+  margin-top: 1em;
+}
+
+.top-title {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: .2em;
+}
+
+/*------------------------------
+  hero
+-------------------------------*/
+.hero img {
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto ;
+  padding-top: 3em;
+}
+
+/*------------------------------
+  title
+-------------------------------*/
+.title-en {
+  display: inline-block;
+  font-size: .3em;
+  font-weight: bold;
+  letter-spacing: .175em;
+  padding-bottom: 1.3em;
+  margin-bottom: 1.25em;
+  border-bottom: 5px solid #212121;
+}
+
+.title-primary {
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+/*------------------------------
+  our mission
+-------------------------------*/
+.main-text {
+  margin: 3em 0;
+  line-height: 2em;
+}
+
+/*------------------------------
+  message
+-------------------------------*/
+
+.message h2 {
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.message-contents {
+  overflow: hidden;
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+.message-left {
+  width: 385px;
+  float: left;
+  padding-right: .25em;
+}
+
+.message-right {
+  margin-top: .75em;
+  width: 377px;
+  float: right;
+  position: relative;
+}
+
+/*------------------------------
+  profile
+-------------------------------*/
+.profile-content {
+  z-index: 1;
+  position: absolute;
+  bottom: -6.5em;
+  left: 1em;
+  padding: 1.5em 1em;
+  background-color: #fff;
+  width: 305px;
+  border: 4px solid #212121;
+}
+
+.profile {
+  font-size: .8125em;
+  letter-spacing: .2em;
+  padding: .5em .75em;
+  color: #fff;
+  background-color: #212121;
+  z-index: 2;
+  position: absolute;
+  top: 33.5em;
+  left: 2.75em;
+}
+
+.profile-content dt {
+  font-size: .8125em;
+}
+
+.profile-content dd {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: .2em 0;
+}
+
+.profile-content p {
+  font-size: .75em;
+}
+
+/*------------------------------
+  company profile
+-------------------------------*/
+.company-profile {
+  clear: both;
+}
+
+.company-profile h2 {
+  text-align: center;
+}
+
+.company-profile dl {
+  margin-top: 2em;
+  overflow: hidden;
+  width: 100%;
+}
+
+.company-profile dt {
+  float: left;
+  clear: both;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-weight: bold;
+}
+
+.company-profile dd {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 200px;
+  border-bottom: 2px solid #eee;
+}
+
+
+/*------------------------------
+  Button
+-------------------------------*/
+.button {
+  border: 2px solid #212121;
+  border-radius: 1em;
+  width: 430px;
+  margin: 0 auto;
+  margin-top: 5em;
+  position: relative;
+  background-color: #fff;
+}
+
+.button a {
+  text-align: center;
+  display: block;
+  padding: 1em 0;
+  text-decoration: none;
+  color: #212121;
+  font-weight: bold;
+}
+
+.button:before,
+.button:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.button:before {
+  right: 32px;
+  background-color: #212121;
+}
+
+.button:after {
+  right: 35px;
+  background-color: inherit;
+}
+
+.button:hover {
+  background-color: #212121;
+}
+
+.button a:hover {
+  color: #fff;
+}
+
+.button:hover:before {
+  background-color: #fff;
+}
+
+/*------------------------------
+  Button pagetop
+-------------------------------*/
+
+.button-pagetop {
+  position:relative;
+  background-color: #fff;
+  margin: 5em auto;
+  width: 100px;
+}
+
+.button-pagetop a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #212121;
+  font-size: .75em;
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+.button-pagetop:before,
+.button-pagetop:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.button-pagetop:before {
+  top: 0;
+  background-color: #212121;
+}
+
+.button-pagetop:after {
+  top: 3px;
+  background-color: inherit;
+}
+
+
+
+
+/*
+  Footer
+----------------------------------------------- */
+#footer {
+  clear: both;
+}
+
+.footer-contents a:hover {
+  color: #ddd;
+}
+
+.footer-contents {
+  color: #bdbdbd;
+  font-size: .75em;
+  background-color: #212121;
+  width: 100%;
+}
+
+.footer-contents ol {
+  padding: 3.5em 0;
+  margin: 0 2em;
+  border-bottom: 2px solid #666;
+  position: relative;
+}
+
+/*------------------------------
+  footer-nav
+-------------------------------*/
+
+.footer-list li {
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: .15em;
+}
+
+.footer-list li:after {
+  content: '>';
+  top: 0;
+  bottom: 0;
+  margin: auto .5em;
+}
+
+.footer-list li:last-child:after {
+  content: '';
+}
+
+.footer-contents a {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+.footer-nav ul {
+  overflow: hidden;
+  margin-left: 1.5em;
+  vertical-align: middle;
+  font-size: medium;
+}
+
+.footer-nav li {
+  float: left;
+}
+
+.footer-nav a {
+  display: block;
+  padding: 3.5em 2.5em;
+  font-weight: bold;
+  letter-spacing: .2em;
+  font-size: .75em;
+}
+
+.footer-nav a:first-child {
+  padding-left: 0;
+}
+
+/*------------------------------
+  address
+-------------------------------*/
+.footer-bottom {
+  clear: both;
+  overflow: hidden;
+  padding: 3.5em 0;
+  margin: 0 2em;
+  border-top: 2px solid #666;
+  vertical-align: middle;
+}
+.footer-bottom address {
+  float: left;
+}
+
+.footer-logo {
+  display: inline-block;
+  padding-right: 2em;
+}
+
+.wrap {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: medium;
+}
+
+.footer-bottom .wrap {
+  vertical-align: middle;
+  font-size: medium;
+}
+
+.wrap li + li {
+  border-left: 1px solid #bdbdbd;
+}
+
+.wrap li {
+  display: inline-block;
+  font-size: .75em;
+  padding: 0 .75em;
+}
+
+.copy-right {
+  float: right;
+  margin-top: .5em;
+}
+
+/*
+  Accessibility
+----------------------------------------------- */
+.screen-reader-text {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
