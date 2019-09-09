@@ -441,7 +441,7 @@ small {
 
 .card__list dd {
   display: inline-block;
-  padding-right: 1em;
+  padding-right: .5em;
 }
 
 .card__list li {
@@ -450,7 +450,7 @@ small {
 
 .card__list {
   font-size: .75em;
-  padding: .75em 0 1.25em;
+  padding: .75em 0 1em;
 }
 
 .card__text {
