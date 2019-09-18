@@ -44,7 +44,7 @@
 
     <section class="l-section profile" id="profile-id">
       <div class="l-container -narrow">
-        <hgroup>
+        <hgroup class="text-center">
           <h2 class="heading -primary">プロフィール</h2>
           <h3 class="heading -secondary">音楽よりも、料理よりも、<br>今は勉強がたのしい</h3>
         </hgroup>
@@ -111,7 +111,7 @@
         </div>
         <!-- /.detail__content -->
         <figure class="-image">
-          <img src="assets/images/music.jpg" alt="テーブルの上にヘッドフォン">
+          <img src="assets/images/music.png" alt="テーブルの上にヘッドフォン">
         </figure>
       </section>
       <!-- /.profile__detail-1 -->
@@ -126,7 +126,7 @@
         </div>
 
         <figure class="-image">
-          <img src="assets/images/pc.jpg" alt="PCでコーディングする女性">
+          <img src="assets/images/pc2.png" alt="PCでコーディングする女性">
         </figure>
       </section>
       <!-- /.profile-detail-2 -->
@@ -135,46 +135,30 @@
 
 
     <section class="l-section skill" id="skill-id">
-      <div class="l-container -narrow">
-        <hgroup>
+      <div class="js-skillContainer l-container -narrow">
+        <hgroup class="text-center">
           <h2 class="heading -primary">できること</h2>
           <h3 class="heading -secondary">Web制作の楽しさを知り<br>できること日々更新中</h3>
         </hgroup>
-        <dl class="skill__content">
-          <div class="skill__content__item">
-            <dt>HTML</dt>
-            <dd>&#9733;&#9733;&#9733;&#9734;&#9734;</dd>
-            <dt>CSS</dt>
-            <dd>&#9733;&#9733;&#9734;&#9734;&#9734;</dd>
-            <dt>Javascript</dt>
-            <dd>&#9733;&#9734;&#9734;&#9734;&#9734;</dd>
-          </div>
-          <div class="skill__content__item">
-            <dt>PHP</dt>
-            <dd>&#9733;&#9733;&#9734;&#9734;&#9734;</dd>
-            <dt>MySQL</dt>
-            <dd>&#9733;&#9734;&#9734;&#9734;&#9734;</dd>
-            <dt>Adobe XD</dt>
-            <dd>&#9733;&#9733;&#9734;&#9734;&#9734;</dd>
-          </div>
-          <div class="skill__content__item -long">
-            <dt>Cubase 10<small>(録音、MIX)</small></dt>
-            <dd>&#9733;&#9733;&#9733;&#9734;&#9734;</dd>
-            <dt>こつこつ物づくりをする</dt>
-            <dd>&#9733;&#9733;&#9733;&#9733;&#9733;</dd>
-            <dt>人と揉め事を起こさない</dt>
-            <dd>&#9733;&#9733;&#9733;&#9733;&#9733;</dd>
-          </div>
-        </dl>
+        <ul class="js-skill skill__wraper">
+          <li class="l-skill__contents skill__item html">HTML</li>
+          <li class="l-skill__contents skill__item css">CSS</li>
+          <li class="l-skill__contents skill__item javascript">javascript</li>
+          <li class="l-skill__contents skill__item jquery">jQuery</li>
+          <li class="l-skill__contents skill__item php">PHP</li>
+          <li class="l-skill__contents skill__item mysql">MySQL</li>
+          <li class="l-skill__contents skill__item xd">Adobe XD</li>
+          <li class="l-skill__contents skill__item cubase">cubase10</li>
+        </ul>
       </div>
       <!-- /.l-container -narrow -->
     </section>
     <!-- /.l-section -->
 
 
-    <section class="l-section" id="work-id">
-      <div class="l-container -narrow work">
-        <hgroup>
+    <section class="l-section  work" id="work-id">
+      <div class="l-container">
+        <hgroup class="text-center">
           <h2 class="heading -primary">作ったもの</h2>
           <h3 class="heading -secondary">HTML CSS PHP MySQL<br>約３ヶ月の軌跡</h3>
         </hgroup>
@@ -182,26 +166,25 @@
         <div class="l-work__container">
           <article class="l-grid">
             <div class="card">
-              <h3 class="card__title">1週間の授業後に初めて作ったWebサイト</h3>
-              <p class="card__tag -first">first work</p>
+              <h3 class="card__title">初めて作ったWebサイト</h3>
+              <p class="card__tag -old"><time datetime="2019-06-01">2019.6.1</time></p>
               <figure><img src="assets/images/politec.jpg" alt="ポリテクセンター京都を参考にしたWebサイト"></figure>
               <dl class="card__list">
-                <dt>製作期間:</dt>
+                <dt>期間:</dt>
                 <dd>3日</dd>
-                <dt>使用言語:</dt>
+                <dt>言語:</dt>
                 <dd>
                   <ul>
                     <li>HTML</li>
                     <li>CSS</li>
                   </ul>
                 </dd>
-                <dt>作成日:</dt>
-                <dd><time datetime="2019-06-01">2019.6.1</time></dd>
               </dl>
-              <p class="card__text">職業訓練校でHTML/CSS/Javascriptの授業を1週間受けた後、通っている学校のWebサイトを制作しました。<br>自分でWebサイトを作るということが初めてだったので時間内にとにかく形のするので精一杯でした。</p>
+              <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
+              <p class="js-cardText card__text">職業訓練校で1週間授業を受けた後、通っている学校のWebサイトを制作しました。<br>自分でWebサイトを作るということが初めてだったので時間内にとにかく形のするので精一杯でした。</p>
               <ul class="card__button">
                 <li><a href="link/politec/index.html" target="_blank" class="button -primary -web">サイトを見る</a></li>
-                <li><a href="https://github.com/nao-itano/politec/tree/first-commit" target="_blank" class="button -primary -git">Github</a></li>
+                <li><a href="https://github.com/nao-itano/politec/tree/first-commit" target="_blank" class="button -primary ">Github</a></li>
               </ul>
               <!-- /.card__button -->
             </div>
@@ -211,24 +194,24 @@
           <article class="l-grid">
             <div class="card">
               <h3 class="card__title">ポートフォリオサイト</h3>
-              <p class="card__tag -new">new</p>
+              <p class="card__tag -new"><time datetime="2019-09-01">2019.9.1</time></p>
               <figure><img src="assets/images/portfolio.jpg" alt="ポリテクセンター京都を参考にしたWebサイト"></figure>
               <dl class="card__list">
-                <dt>製作期間:</dt>
+                <dt>期間:</dt>
                 <dd>1週間</dd>
-                <dt>使用言語:</dt>
+                <dt>言語:</dt>
                 <dd>
                   <ul>
                     <li>HTML</li>
                     <li>CSS</li>
+                    <li>javascript</li>
                   </ul>
                 </dd>
-                <dt>作成日:</dt>
-                <dd><time datetime="2019-09-01">2019.9.1</time></dd>
               </dl>
-              <p class="card__text">これまで勉強した事をできるだけ使ってポートホリオサイトを作りました。<br>アクセシビリティや、新しく勉強したflexbox、CSS設計を取り入れてコーディングしました。</p>
+              <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
+              <p class="js-cardText card__text">これまで勉強した事をできるだけ使ってポートホリオサイトを作りました。<br>アクセシビリティや、新しく勉強したflexbox、CSS設計、javascriptを取り入れてコーディングしました。</p>
               <div class="card__button">
-                <p><a href="#" class="button -primary -git">Github</a></p>
+                <p><a href="#" class="button -primary -onlyGit">Github</a></p>
               </div>
               <!-- /.card__button -->
             </div>
@@ -240,25 +223,24 @@
           <article class="l-grid">
             <div class="card">
               <h3 class="card__title">1ヶ月勉強して作ったWebサイト</h3>
-              <p class="card__tag -new">new</p>
+              <p class="card__tag -new"><time datetime="2019-08-30">2019.8.30</time></p>
               <figure><img src="assets/images/dummyconsulting.jpg" alt="架空の会社のWebサイト"></figure>
               <dl class="card__list">
-                <dt>製作期間:</dt>
+                <dt>期間:</dt>
                 <dd>3日</dd>
-                <dt>使用言語:</dt>
+                <dt>言語:</dt>
                 <dd>
                   <ul>
                     <li>HTML</li>
                     <li>CSS</li>
                   </ul>
                 </dd>
-                <dt>作成日:</dt>
-                <dd><time datetime="2019-08-30">2019.8.30</time></dd>
               </dl>
-              <p class="card__text">オンラインサロンでの課題で、PDFを元にデザインカンプから制作しました。(Adobe XD使用)<br>デザイン通りにすることと、目の不自由な方や古いブラウザを使用している方でも利用できるよう、アクセシビリティを意識しました。</p>
+              <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
+              <p class="js-cardText card__text">オンラインサロンでの課題で、PDFを元にデザインカンプから制作しました。(Adobe XD使用)<br>目の不自由な方や古いブラウザを使用している方でも利用できるよう、アクセシビリティを意識しました。</p>
               <ul class="card__button">
                 <li><a href="link/DummyConsulting/about-us/index.html" target="_blank" class="button -primary -web">サイトを見る</a></li>
-                <li><a href="https://github.com/nao-itano/DummyConsulting/tree/first-commit" target="_blank" class="button -primary -git">Github</a></li>
+                <li><a href="https://github.com/nao-itano/DummyConsulting/tree/first-commit" target="_blank" class="button -primary ">Github</a></li>
               </ul>
               <!-- /.card__button -->
             </div>
@@ -269,26 +251,25 @@
           <article class="l-grid">
             <div class="card">
               <h3 class="card__title">授業で制作したスマートフォンサイト</h3>
-              <p class="card__tag -new">new</p>
+              <p class="card__tag -new"><time datetime="2019-09-05">2019.9.5</time></p>
               <figure><img src="assets/images/sp.jpg" alt="スマートフォン対応のWebサイト"></figure>
               <dl class="card__list">
-                <dt>製作期間:</dt>
+                <dt>期間:</dt>
                 <dd>2日</dd>
-                <dt>使用言語:</dt>
+                <dt>言語:</dt>
                 <dd>
                   <ul>
                     <li>HTML</li>
                     <li>CSS</li>
                   </ul>
                 </dd>
-                <dt>作成日:</dt>
-                <dd><time datetime="2019-08-30">2019.9.5</time></dd>
               </dl>
-              <p class="card__text">オンラインサロンのレスポンシブデザインでの授業で作ったギャラリーサイトです。<br>
-              対応ブラウザを考え、floatでレイアウトを作成しています。</p>
+              <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
+              <p class="js-cardText card__text">オンラインサロンのレスポンシブデザインでの授業で作ったギャラリーサイトです。<br>
+              対応ブラウザを考え、floatとinline-blockでレイアウトを作成しています。</p>
               <ul class="card__button">
                 <li><a href="link/dummy-photo-gallery/index.html" target="_blank" class="button -primary -web">サイトを見る</a></li>
-                <li><a href="https://github.com/nao-itano/DummyPhotoGallery/tree/first-commit" target="_blank" class="button -primary -git">Github</a></li>
+                <li><a href="https://github.com/nao-itano/DummyPhotoGallery/tree/first-commit" target="_blank" class="button -primary ">Github</a></li>
               </ul>
               <!-- /.card__button -->
             </div>
@@ -300,24 +281,24 @@
           <article class="l-grid">
             <div class="card">
               <h3 class="card__title">3週間勉強して作ったWebサイト</h3>
+              <p class="card__tag -old"><time datetime="2019-08-22">2019.8.22</time></p>
               <figure><img src="assets/images/dummycoding.jpg" alt="架空の会社のWebサイト"></figure>
               <dl class="card__list">
-                <dt>製作期間:</dt>
+                <dt>期間:</dt>
                 <dd>3日</dd>
-                <dt>使用言語:</dt>
+                <dt>言語:</dt>
                 <dd>
                   <ul>
                     <li>HTML</li>
                     <li>CSS</li>
                   </ul>
                 </dd>
-                <dt>作成日:</dt>
-                <dd><time datetime="2019-08-22">2019.8.22</time></dd>
               </dl>
-              <p class="card__text">オンラインサロンでの課題で、PDFに合わせてトップページを制作しました。<br>アクセシビリティと、細かいレイアウトやpxを指定サイズにぴったり合わせる事を意識しました。</p>
+              <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
+              <p class="js-cardText card__text">オンラインサロンでの課題で、PDFに合わせてトップページを制作しました。<br>アクセシビリティと、細かいレイアウトやpxを指定サイズにぴったり合わせる事を意識しました。</p>
               <ul class="card__button">
                 <li><a href="link/DummyCodingFactory/index.html" target="_blank" class="button -primary -web">サイトを見る</a></li>
-                <li><a href="https://github.com/nao-itano/DummyCodingFactory/tree/first-commit" target="_blank" class="button -primary -git">Github</a></li>
+                <li><a href="https://github.com/nao-itano/DummyCodingFactory/tree/first-commit" target="_blank" class="button -primary ">Github</a></li>
               </ul>
               <!-- /.card__button -->
             </div>
@@ -327,24 +308,24 @@
 
           <article class="l-grid">
             <div class="card">
-              <h3 class="card__title">1ヶ月PHP/MySQLを勉強して作ったSNS</h3>
+              <h3 class="card__title">PHP/MySQLの課題で作ったSNS</h3>
+              <p class="card__tag -old"><time datetime="2019-07-03">2019.7.3</time></p>
               <figure><img src="assets/images/sns.jpg" alt="課題で作ったSNS"></figure>
               <dl class="card__list">
-                <dt>製作期間:</dt>
+                <dt>期間:</dt>
                 <dd>3日</dd>
-                <dt>使用言語:</dt>
+                <dt>言語:</dt>
                 <dd>
                   <ul>
                     <li>PHP</li>
                     <li>MySQL</li>
                   </ul>
                 </dd>
-                <dt>作成日:</dt>
-                <dd><time datetime="2019-07-03">2019.7.3</time></dd>
               </dl>
-              <p class="card__text">授業で学んだ事を参考に、TwitterのようなSNSを作りました。<br>新規会員登録、ログイン、エラーメッセージ、パスワードのハッシュ化、投稿、自分の投稿のみ削除、いいねをする機能をつけました。</p>
+              <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
+              <p class="js-cardText card__text">授業で学んだ事を参考に、TwitterのようなSNSを作りました。<br>新規会員登録、ログイン、エラーメッセージ、パスワードのハッシュ化、投稿、自分の投稿のみ削除、いいねをする機能をつけました。</p>
               <div class="card__button">
-                <p><a href="https://github.com/nao-itano/sns/tree/first-commit" target="_blank" class="button -primary -git">Github</a></p>
+                <p><a href="https://github.com/nao-itano/sns/tree/first-commit" target="_blank" class="button -primary  -onlyGit">Github</a></p>
               </div>
               <!-- /.card__button -->
             </div>
@@ -355,23 +336,23 @@
           <article class="l-grid">
             <div class="card">
               <h3 class="card__title">PHP/MySQLの授業で作ったCMS</h3>
+              <p class="card__tag -old"><time datetime="2019-06-20">2019.6.20</time></p>
               <figure><img src="assets/images/mini-cms.jpg" alt="ブログ投稿サイト"></figure>
               <dl class="card__list">
-                <dt>製作期間:</dt>
+                <dt>期間:</dt>
                 <dd>1週間</dd>
-                <dt>使用言語:</dt>
+                <dt>言語:</dt>
                 <dd>
                   <ul>
                     <li>PHP</li>
                     <li>MySQL</li>
                   </ul>
                 </dd>
-                <dt>作成日:</dt>
-                <dd><time datetime="2019-07-03">2019.6.20</time></dd>
               </dl>
-              <p class="card__text">職業訓練校の授業で、記事を投稿するCMSを作りました。<br>投稿画面から記事の投稿、管理画面から編集、削除、CSRF対策、ページング機能を付けました。</p>
+              <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
+              <p class="js-cardText card__text">職業訓練校の授業で、記事を投稿するCMSを作りました。<br>投稿画面から記事の投稿、管理画面から編集、削除、CSRF対策、ページング機能を付けました。</p>
               <div class="card__button">
-                <p><a href="https://github.com/nao-itano/mini-cms/tree/first-commit" target="_blank" class="button -primary -git">Github</a></p>
+                <p><a href="https://github.com/nao-itano/mini-cms/tree/first-commit" target="_blank" class="button -primary  -onlyGit">Github</a></p>
               </div>
               <!-- /.card__button -->
             </div>
@@ -381,24 +362,24 @@
 
           <article class="l-grid">
             <div class="card">
-              <h3 class="card__title">PHPの授業で作ったお問い合わせフォーム</h3>
+              <h3 class="card__title">授業で作ったお問い合わせフォーム</h3>
+              <p class="card__tag -old"><time datetime="2019-06-15">2019.6.15</time></p>
               <figure><img src="assets/images/mail-form.jpg" alt="お問い合わせフォーム"></figure>
               <dl class="card__list">
-                <dt>製作期間:</dt>
+                <dt>期間:</dt>
                 <dd>1週間</dd>
-                <dt>使用言語:</dt>
+                <dt>言語:</dt>
                 <dd>
                   <ul>
                     <li>PHP</li>
                   </ul>
                 </dd>
-                <dt>作成日:</dt>
-                <dd><time datetime="2019-06-15">2019.6.15</time></dd>
               </dl>
-              <p class="card__text">訓練校の授業でお問い合わせフォームを作りました。<br>
+              <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
+              <p class="js-cardText card__text">訓練校の授業でお問い合わせフォームを作りました。<br>
               入力画面、入力確認画面、編集時の入力内容復帰、メール送信機能をつけました。</p>
               <div class="card__button">
-                <p><a href="https://github.com/nao-itano/mail-form/tree/first-commit" target="_blank" class="button -primary -git">Github</a></p>
+                <p><a href="https://github.com/nao-itano/mail-form/tree/first-commit" target="_blank" class="button -primary  -onlyGit">Github</a></p>
               </div>
               <!-- /.card__button -->
             </div>
@@ -412,7 +393,7 @@
     </section>
     <!-- /.l-section -->
     <section class="l-section contact" id="contact-id">
-      <div class="l-container -narrow">
+      <div class="text-center l-container -narrow">
         <h2 class="heading -primary">お問い合わせ</h2>
         <dl class="l-contact">
           <dt class="contact__title">メールアドレス</dt>
@@ -425,7 +406,7 @@
   </main>
   <footer class="l-footer">
     <div class="l-container">
-      <p><a href="#top" class="button -top uppercase">top</a></p>
+      <p><a href="#top" class="js-topButton button -top uppercase">top</a></p>
       <p class="l-footer__logo"><a href="#top"><img src="assets/images/logo.png" alt="板野なお"></a></p>
       <ul class="l-footer__nav">
         <li class="l-nav__item"><a href="#profile-id">プロフィール</a></li>
@@ -439,6 +420,7 @@
     <!-- /.l-container -->
   </footer>
 
-
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
