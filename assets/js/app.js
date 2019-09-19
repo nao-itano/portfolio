@@ -16,42 +16,63 @@ $(function () {
     return false;
   });
 
-  // スキルを順番に出す
-  //// 二回目以降表示される順番がバラバラになります・・・ ////
-  $(function () {
-    $('.js-skill li').css("opacity", 0);
-    $(window).scroll(function () {
-      $('.js-skill li').each(function () {
-        var target = $(this).offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
 
-        if (scroll > target - windowHeight + windowHeight / 5) {
-          $(function () {
-            $('.js-skill li')
-              .each(function (i) {
-                $(this).delay(500 * i).animate({
-                  opacity: 1
-                }, 500);
-              });
-          });
-        } else {
-          $('.js-skill li').css("opacity", 0);
-        }
-      });
-    });
+  // ドロワーメニュー
+  $('.js-button-hamburger').click(function () {
+    $('body').toggleClass('is-active-drawer');
+
+    // aria-expended
+    if ($(this).attr('aria-expanded') == 'false') {
+      $(this).attr('aira-expanded', true);
+    } else {
+      $(this).attr('aria-expanded', false);
+    }
+  })
+
+  $('.js-list a').click(function () {
+    // $('.js-nav-list').fadeOut(100);
+    $('body').removeClass('is-active-drawer');
   });
 
-  //// 全部同時にフェードインのパターン ////
-  // $(window).scroll(function () {
-  //   var windowHeight = $(window).height();
-  //   var target = $('.js-skill').offset().top;
-  //   if ($(window).scrollTop() >= target - windowHeight + windowHeight / 5) {
-  //     $('.js-skill').css('opacity', 1);
-  //   } else {
-  //     $('.js-skill').css("opacity", 0);
-  //   }
+
+
+
+  // スキルを順番に出す
+  //// 二回目以降表示される順番がバラバラになります・・・ ////
+  // $(function () {
+  //   $('.js-skill li').css("opacity", 0);
+  //   $(window).scroll(function () {
+  //     $('.js-skill li').each(function () {
+  //       var target = $(this).offset().top;
+  //       var scroll = $(window).scrollTop();
+  //       var windowHeight = $(window).height();
+
+  //       if (scroll > target - windowHeight + windowHeight / 5) {
+  //         $(function () {
+  //           $('.js-skill li')
+  //             .each(function (i) {
+  //               $(this).delay(500 * i).animate({
+  //                 opacity: 1
+  //               }, 500);
+  //             });
+  //         });
+  //       } else {
+  //         $('.js-skill li').css("opacity", 0);
+  //       }
+  //     });
+  //   });
   // });
+
+  //// 全部同時にフェードインのパターン ////
+  $(window).scroll(function () {
+    var windowHeight = $(window).height();
+    var target = $('.js-skill').offset().top;
+    if ($(window).scrollTop() >= target - windowHeight + windowHeight / 5) {
+      $('.js-skill').css('opacity', 1);
+    } else {
+      $('.js-skill').css("opacity", 0);
+    }
+  });
 
   // work詳細表示/非表示
   $('.js-cardText').hide();

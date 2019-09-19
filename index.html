@@ -2,8 +2,9 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>板野なおのポートフフォリオ</title>
-  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/common2.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,17 +16,23 @@
       </h1>
 
 
-      <nav class="l-header__nav">
+      <nav class="js-nav l-header__nav">
         <h2 class="screen-reader-text">サイト内メニュー</h2>
-        <ul>
-          <li class="l-nav__item"><a href="#profile-id">プロフィール</a></li>
-          <li class="l-nav__item"><a href="#skill-id">できること</a></li>
-          <li class="l-nav__item"><a href="#work-id">作ったもの</a></li>
-          <li class="l-nav__item"><a href="#contact-id">お問い合わせ</a></li>
+        <button class="js-button-hamburger button-hamburger" type="button" aria-controls="global-nav" aria-expanded="false">
+          <span class="hamburger">
+            <span class="screen-reader-text">メニューを開閉する</span>
+          </span>
+        </button>
+        <ul id="global-nav" class="l-global-nav js-nav-list">
+          <li class="js-list l-nav__item"><a href="#profile-id">プロフィール</a></li>
+          <li class="js-list l-nav__item"><a href="#skill-id">できること</a></li>
+          <li class="js-list l-nav__item"><a href="#work-id">作ったもの</a></li>
+          <li class="js-list l-nav__item"><a href="#contact-id">お問い合わせ</a></li>
         </ul>
       </nav>
       <p>
-        <a href="https://github.com/nao-itano" target="_blank" class="l-header__icon"><img src="assets/images/github-logo.png" alt="github" width="35px" height="35px"></a>
+        <a href="https://github.com/nao-itano" target="_blank" class="l-header__icon"><img
+            src="assets/images/github-logo.png" alt="github" width="35px" height="35px"></a>
       </p>
     </div>
     <!-- /.l-container -->
@@ -34,25 +41,34 @@
 
   <main class="l-main">
     <div class="l-hero">
-      <figure class="hero__image">
-        <img src="assets/images/hero.jpg" alt="板野なおのポートフォリオサイト">
-      </figure>
-      <p class="l-hero__title"><span class="hero__tag">&lt;em&gt;</span><span class="hero__em">やさしい</span><span class="hero__tag">&lt;/em&gt;</span><br><span class="hero__text">フロントエンドエンジニアを目指して一ヶ月</span><br>板野なおのポートフォリオサイト
-      </p>
+      <picture class="hero__image">
+        <source srcset="assets/images/hero-sp.jpg 1x, assets/images/hero-sp@2x.jpg 2x" media="(max-width: 767px)">
+        <img src="assets/images/hero.jpg" srcset="assets/images/hero.jpg 1x, assets/images/hero@2x.jpg 2x" alt="板野なおのポートフォリオサイト">
+      </picture>
+      <div class="hero__body">
+        <p class="l-hero__title"><span class="hero__tag">&lt;em&gt;</span><span class="hero__em">やさしい</span><span
+            class="hero__tag">&lt;/em&gt;</span><br><span
+            class="hero__text">フロントエンドエンジニアを目指して一ヶ月</span><br><span class="hero__name">板野なおのポートフォリオサイト</span>
+        </p>
+      </div>
     </div>
     <!-- /.l-hero -->
 
     <section class="l-section profile" id="profile-id">
-      <div class="l-container -narrow">
-        <hgroup class="text-center">
+      <div class="l-container -narrow text-center">
+        <hgroup>
           <h2 class="heading -primary">プロフィール</h2>
           <h3 class="heading -secondary">音楽よりも、料理よりも、<br>今は勉強がたのしい</h3>
         </hgroup>
 
         <section class="l-profile__primary">
-          <figure>
-            <img src="assets/images/profile.jpg" alt="板野なおのプロフィール写真">
-          </figure>
+          <div class="profile__picture text-center">
+            <picture>
+              <source srcset="assets/images/profile-sp.jpg 1x, assets/images/profile-sp@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="assets/images/profile.jpg" srcset="assets/images/profile.jpg 1x, assets/images/profile@2x.jpg 2x" alt="板野なおのプロフィール写真">
+            </picture>
+          </div>
+
 
           <div class="profile__content">
             <dl class="profile__list">
@@ -70,7 +86,6 @@
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>Javascript</li>
-                  <li>Adobe XD</li>
                 </ul>
               </dd>
               <dt>趣味</dt>
@@ -84,13 +99,13 @@
               <dt>休日</dt>
               <dd>
                 <ul>
-                  <li>自宅のクローゼットで録音</li>
+                  <li>クローゼットで録音</li>
                   <li>勉強</li>
                 </ul>
               </dd>
             </dl>
-            <p class="profile__text">現在職業訓練校とオンラインサロンで勉強中。<br>
-                <time datetime="2019-08-01">8月1日</time>より、フロントエンドエンジニアを目指す。</p>
+            <p class="profile__text">
+              <time datetime="2019-08-01">8月1日</time>よりフロントエンドエンジニアを目指す</p>
           </div>
           <!-- /.profile__content -->
         </section>
@@ -101,33 +116,37 @@
     <!-- /.l-section -->
 
 
-    <div class="l-section l-container -narrow">
-      <section class="profile__detail-1">
+    <div class="l-section l-container -narrow -detail">
+      <section class="profile__detail -primary">
         <div class="detail__content">
-          <h3 class="detail__title">音楽活動を通してWebやアプリケーションの可能性、<br>影響力を身にしみて感じた。</h3>
+          <h3 class="detail__title">音楽活動を通して<br>Webやアプリケーションの可能性、<br>影響力を身にしみて感じた。</h3>
 
           <p class="detail__text">元々は飲食店で調理、販売、接客の仕事をしていましたが、この先長く働くためにもっと専門性を身に付けたいと考えるようになりました。</p>
           <p class="detail__text">また、自身の音楽活動を通してWebやアプリケーションの可能性、影響力を身にしみて感じていたことから、以前からこの業界に興味と憧れがありました。</p>
         </div>
         <!-- /.detail__content -->
-        <figure class="-image">
-          <img src="assets/images/music.png" alt="テーブルの上にヘッドフォン">
-        </figure>
+        <picture class="detail__img -music">
+          <source srcset="assets/images/music-sp.png 1x, assets/images/music-sp@2x.png 2x" media="(max-width: 767px)">
+          <img src="assets/images/music.png" srcset="assets/images/music.png 1x, assets/images/music@2x.png 2x" alt="ヘッドフォンのイラスト">
+        </picture>
       </section>
       <!-- /.profile__detail-1 -->
 
 
-      <section class="profile__detail-2">
+      <section class="profile__detail -secondary">
         <div class="detail__content">
           <h3 class="detail__title">目に見えない部分まで、<br>きちんと閲覧者の気持ちを考えて作る。</h3>
           <p class="detail__text">Webの勉強をしているうちに、「やさしい」Webサイトというのは、目に見えない部分まできちんと閲覧者の気持ちを考えて作られていることを知りました。</p>
-          <p class="detail__text">誰もが気持ちよく利用できるサービスを作ることに魅力を感じましたし、私自身もこれまでの音楽活動で、ひとりでも多くの人に見てもらえる、気づいてもらえることの重要性を痛感していたので、作り手としてもこれを意識することはとても大切な事だと感じました。</p>
-          <p class="detail__text">まだまだ勉強を始めたばかりですが、この先、誰に対しても「自分が作ったから大丈夫」と思えるようなアクセシビリティを意識したものを作れるエンジニアになりたいです。</p>
+          <p class="detail__text">
+            誰もが気持ちよく利用できるサービスを作ることに魅力を感じましたし、私自身もこれまでの音楽活動で、ひとりでも多くの人に見てもらえる、気づいてもらえることの重要性を痛感していたので、作り手としてもこれを意識することはとても大切な事だと感じました。
+          </p>
+          <!-- <p class="detail__text">まだまだ勉強を始めたばかりですが、この先、誰に対しても「自分が作ったから大丈夫」と思えるようなアクセシビリティを意識したものを作れるエンジニアになりたいです。</p> -->
         </div>
 
-        <figure class="-image">
-          <img src="assets/images/pc2.png" alt="PCでコーディングする女性">
-        </figure>
+        <picture class="detail__img -pc">
+          <source srcset="assets/images/pc2-sp.png 1x, assets/images/pc2-sp@2x.png 2x" media="(max-width: 767px)">
+          <img src="assets/images/pc2.png" srcset="assets/images/pc2.png 1x, assets/images/pc2@2x.png 2x" alt="パソコンのイラスト">
+        </picture>
       </section>
       <!-- /.profile-detail-2 -->
     </div>
@@ -164,33 +183,7 @@
         </hgroup>
 
         <div class="l-work__container">
-          <article class="l-grid">
-            <div class="card">
-              <h3 class="card__title">初めて作ったWebサイト</h3>
-              <p class="card__tag -old"><time datetime="2019-06-01">2019.6.1</time></p>
-              <figure><img src="assets/images/politec.jpg" alt="ポリテクセンター京都を参考にしたWebサイト"></figure>
-              <dl class="card__list">
-                <dt>期間:</dt>
-                <dd>3日</dd>
-                <dt>言語:</dt>
-                <dd>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                  </ul>
-                </dd>
-              </dl>
-              <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
-              <p class="js-cardText card__text">職業訓練校で1週間授業を受けた後、通っている学校のWebサイトを制作しました。<br>自分でWebサイトを作るということが初めてだったので時間内にとにかく形のするので精一杯でした。</p>
-              <ul class="card__button">
-                <li><a href="link/politec/index.html" target="_blank" class="button -primary -web">サイトを見る</a></li>
-                <li><a href="https://github.com/nao-itano/politec/tree/first-commit" target="_blank" class="button -primary ">Github</a></li>
-              </ul>
-              <!-- /.card__button -->
-            </div>
-            <!-- /.card -->
-          </article>
-          <!-- /.l-grid -->
+
           <article class="l-grid">
             <div class="card">
               <h3 class="card__title">ポートフォリオサイト</h3>
@@ -209,9 +202,10 @@
                 </dd>
               </dl>
               <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
-              <p class="js-cardText card__text">これまで勉強した事をできるだけ使ってポートホリオサイトを作りました。<br>アクセシビリティや、新しく勉強したflexbox、CSS設計、javascriptを取り入れてコーディングしました。</p>
+              <p class="js-cardText card__text">
+                これまで勉強した事をできるだけ使ってポートホリオサイトを作りました。<br>アクセシビリティや、新しく勉強したflexbox、CSS設計、javascriptを取り入れてコーディングしました。</p>
               <div class="card__button">
-                <p><a href="#" class="button -primary -onlyGit">Github</a></p>
+                <p><a href="#" class="button -primary ">Github</a></p>
               </div>
               <!-- /.card__button -->
             </div>
@@ -219,7 +213,34 @@
           </article>
           <!-- /.l-grid -->
 
-
+          <article class="l-grid">
+            <div class="card">
+              <h3 class="card__title">スマートフォンサイト</h3>
+              <p class="card__tag -new"><time datetime="2019-09-05">2019.9.5</time></p>
+              <figure><img src="assets/images/sp.jpg" alt="スマートフォン対応のWebサイト"></figure>
+              <dl class="card__list">
+                <dt>期間:</dt>
+                <dd>2日</dd>
+                <dt>言語:</dt>
+                <dd>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                </dd>
+              </dl>
+              <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
+              <p class="js-cardText card__text">オンラインサロンのレスポンシブデザインでの授業で作ったギャラリーサイトです。<br>
+                対応ブラウザを考え、floatとinline-blockでレイアウトを作成しています。</p>
+              <ul class="card__button">
+                <li><a href="https://github.com/nao-itano/DummyPhotoGallery/tree/first-commit" target="_blank" class="button -primary ">Github</a></li>
+                <li><a href="link/dummy-photo-gallery/index.html" target="_blank" class="button -primary -web">サイトを見る</a></li>
+              </ul>
+              <!-- /.card__button -->
+            </div>
+            <!-- /.card -->
+          </article>
+          <!-- /.l-grid -->
           <article class="l-grid">
             <div class="card">
               <h3 class="card__title">1ヶ月勉強して作ったWebサイト</h3>
@@ -237,46 +258,17 @@
                 </dd>
               </dl>
               <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
-              <p class="js-cardText card__text">オンラインサロンでの課題で、PDFを元にデザインカンプから制作しました。(Adobe XD使用)<br>目の不自由な方や古いブラウザを使用している方でも利用できるよう、アクセシビリティを意識しました。</p>
+              <p class="js-cardText card__text">オンラインサロンでの課題で、PDFを元にデザインカンプから制作しました。(Adobe
+                          XD使用)<br>目の不自由な方や古いブラウザを使用している方でも利用できるよう、アクセシビリティを意識しました。</p>
               <ul class="card__button">
-                <li><a href="link/DummyConsulting/about-us/index.html" target="_blank" class="button -primary -web">サイトを見る</a></li>
                 <li><a href="https://github.com/nao-itano/DummyConsulting/tree/first-commit" target="_blank" class="button -primary ">Github</a></li>
+                <li><a href="link/DummyConsulting/about-us/index.html" target="_blank" class="button -primary -web">サイトを見る</a></li>
               </ul>
               <!-- /.card__button -->
             </div>
             <!-- /.card -->
           </article>
           <!-- /.l-grid -->
-
-          <article class="l-grid">
-            <div class="card">
-              <h3 class="card__title">授業で制作したスマートフォンサイト</h3>
-              <p class="card__tag -new"><time datetime="2019-09-05">2019.9.5</time></p>
-              <figure><img src="assets/images/sp.jpg" alt="スマートフォン対応のWebサイト"></figure>
-              <dl class="card__list">
-                <dt>期間:</dt>
-                <dd>2日</dd>
-                <dt>言語:</dt>
-                <dd>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                  </ul>
-                </dd>
-              </dl>
-              <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
-              <p class="js-cardText card__text">オンラインサロンのレスポンシブデザインでの授業で作ったギャラリーサイトです。<br>
-              対応ブラウザを考え、floatとinline-blockでレイアウトを作成しています。</p>
-              <ul class="card__button">
-                <li><a href="link/dummy-photo-gallery/index.html" target="_blank" class="button -primary -web">サイトを見る</a></li>
-                <li><a href="https://github.com/nao-itano/DummyPhotoGallery/tree/first-commit" target="_blank" class="button -primary ">Github</a></li>
-              </ul>
-              <!-- /.card__button -->
-            </div>
-            <!-- /.card -->
-          </article>
-          <!-- /.l-grid -->
-
 
           <article class="l-grid">
             <div class="card">
@@ -295,10 +287,12 @@
                 </dd>
               </dl>
               <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
-              <p class="js-cardText card__text">オンラインサロンでの課題で、PDFに合わせてトップページを制作しました。<br>アクセシビリティと、細かいレイアウトやpxを指定サイズにぴったり合わせる事を意識しました。</p>
+              <p class="js-cardText card__text">
+                オンラインサロンでの課題で、PDFに合わせてトップページを制作しました。<br>アクセシビリティと、細かいレイアウトやpxを指定サイズにぴったり合わせる事を意識しました。</p>
               <ul class="card__button">
-                <li><a href="link/DummyCodingFactory/index.html" target="_blank" class="button -primary -web">サイトを見る</a></li>
                 <li><a href="https://github.com/nao-itano/DummyCodingFactory/tree/first-commit" target="_blank" class="button -primary ">Github</a></li>
+                <li><a href="link/DummyCodingFactory/index.html" target="_blank" class="button -primary -web">サイトを見る</a>
+                </li>
               </ul>
               <!-- /.card__button -->
             </div>
@@ -308,7 +302,7 @@
 
           <article class="l-grid">
             <div class="card">
-              <h3 class="card__title">PHP/MySQLの課題で作ったSNS</h3>
+              <h3 class="card__title">課題で作ったSNS</h3>
               <p class="card__tag -old"><time datetime="2019-07-03">2019.7.3</time></p>
               <figure><img src="assets/images/sns.jpg" alt="課題で作ったSNS"></figure>
               <dl class="card__list">
@@ -323,9 +317,11 @@
                 </dd>
               </dl>
               <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
-              <p class="js-cardText card__text">授業で学んだ事を参考に、TwitterのようなSNSを作りました。<br>新規会員登録、ログイン、エラーメッセージ、パスワードのハッシュ化、投稿、自分の投稿のみ削除、いいねをする機能をつけました。</p>
+              <p class="js-cardText card__text">
+                授業で学んだ事を参考に、TwitterのようなSNSを作りました。<br>新規会員登録、ログイン、エラーメッセージ、パスワードのハッシュ化、投稿、自分の投稿のみ削除、いいねをする機能をつけました。</p>
               <div class="card__button">
-                <p><a href="https://github.com/nao-itano/sns/tree/first-commit" target="_blank" class="button -primary  -onlyGit">Github</a></p>
+                <p><a href="https://github.com/nao-itano/sns/tree/first-commit" target="_blank"
+                    class="button -primary">Github</a></p>
               </div>
               <!-- /.card__button -->
             </div>
@@ -335,7 +331,7 @@
 
           <article class="l-grid">
             <div class="card">
-              <h3 class="card__title">PHP/MySQLの授業で作ったCMS</h3>
+              <h3 class="card__title">授業で作ったCMS</h3>
               <p class="card__tag -old"><time datetime="2019-06-20">2019.6.20</time></p>
               <figure><img src="assets/images/mini-cms.jpg" alt="ブログ投稿サイト"></figure>
               <dl class="card__list">
@@ -350,9 +346,11 @@
                 </dd>
               </dl>
               <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
-              <p class="js-cardText card__text">職業訓練校の授業で、記事を投稿するCMSを作りました。<br>投稿画面から記事の投稿、管理画面から編集、削除、CSRF対策、ページング機能を付けました。</p>
+              <p class="js-cardText card__text">
+                職業訓練校の授業で、記事を投稿するCMSを作りました。<br>投稿画面から記事の投稿、管理画面から編集、削除、CSRF対策、ページング機能を付けました。</p>
               <div class="card__button">
-                <p><a href="https://github.com/nao-itano/mini-cms/tree/first-commit" target="_blank" class="button -primary  -onlyGit">Github</a></p>
+                <p><a href="https://github.com/nao-itano/mini-cms/tree/first-commit" target="_blank"
+                    class="button -primary">Github</a></p>
               </div>
               <!-- /.card__button -->
             </div>
@@ -362,7 +360,7 @@
 
           <article class="l-grid">
             <div class="card">
-              <h3 class="card__title">授業で作ったお問い合わせフォーム</h3>
+              <h3 class="card__title">お問い合わせフォーム</h3>
               <p class="card__tag -old"><time datetime="2019-06-15">2019.6.15</time></p>
               <figure><img src="assets/images/mail-form.jpg" alt="お問い合わせフォーム"></figure>
               <dl class="card__list">
@@ -377,15 +375,46 @@
               </dl>
               <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
               <p class="js-cardText card__text">訓練校の授業でお問い合わせフォームを作りました。<br>
-              入力画面、入力確認画面、編集時の入力内容復帰、メール送信機能をつけました。</p>
+                入力画面、入力確認画面、編集時の入力内容復帰、メール送信機能をつけました。</p>
               <div class="card__button">
-                <p><a href="https://github.com/nao-itano/mail-form/tree/first-commit" target="_blank" class="button -primary  -onlyGit">Github</a></p>
+                <p><a href="https://github.com/nao-itano/mail-form/tree/first-commit" target="_blank"
+                    class="button -primary">Github</a></p>
               </div>
               <!-- /.card__button -->
             </div>
             <!-- /.card -->
           </article>
           <!-- /.l-grid -->
+          <article class="l-grid">
+            <div class="card">
+              <h3 class="card__title">初めて作ったWebサイト</h3>
+              <p class="card__tag -old"><time datetime="2019-06-01">2019.6.1</time></p>
+              <figure><img src="assets/images/politec.jpg" alt="ポリテクセンター京都を参考にしたWebサイト"></figure>
+              <dl class="card__list">
+                <dt>期間:</dt>
+                <dd>3日</dd>
+                <dt>言語:</dt>
+                <dd>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                </dd>
+              </dl>
+              <div class="button -more js-moreButton"><span class="screen-reader-text">詳細を見る</span></div>
+              <p class="js-cardText card__text">
+                          職業訓練校で1週間授業を受けた後、通っている学校のWebサイトを制作しました。<br>自分でWebサイトを作るということが初めてだったので時間内にとにかく形のするので精一杯でした。</p>
+              <ul class="card__button">
+                <li><a href="https://github.com/nao-itano/politec/tree/first-commit" target="_blank" class="button -primary ">Github</a></li>
+                <li><a href="link/politec/index.html" target="_blank" class="button -primary -web">サイトを見る</a></li>
+              </ul>
+              <!-- /.card__button -->
+            </div>
+            <!-- /.card -->
+          </article>
+          <!-- /.l-grid -->
+
+
         </div>
         <!-- /.l-work__container -->
       </div>
@@ -414,7 +443,9 @@
         <li class="l-nav__item"><a href="#work-id">作ったもの</a></li>
         <li class="l-nav__item"><a href="#contact-id">お問い合わせ</a></li>
       </ul>
-      <a href="https://github.com/nao-itano" target="_blank" class="l-footer__icon"><img src="assets/images/github-logo.png" alt="github"></a>
+      <p class="l-footer__icon">
+        <a href="https://github.com/nao-itano" target="_blank" class="footer__git"><img src="assets/images/github-logo.png" alt="github"></a>
+      </p>
       <p class="l-footer__copyright"><small>&copy;2019 Nao Itano</small></p>
     </div>
     <!-- /.l-container -->

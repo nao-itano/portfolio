@@ -88,8 +88,10 @@ Layout
 -----------------------------------------------------*/
 /* centering */
 .l-container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .l-container.-narrow {
@@ -134,10 +136,26 @@ Layout
 .l-nav__item a:hover {
   background-color: #faebd7;
 }
+/* main */
+.l-main {
+  clear: both;
+}
 
 /* section*/
 .l-section {
-  padding: 6em 0 6em 0;
+  padding: 3em 0;
+}
+
+@media screen and (min-width: 768px) {
+  .l-section {
+    padding: 4em 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .l-section {
+    padding: 6em 0;
+  }
 }
 
 /* footer */
@@ -182,6 +200,7 @@ Layout
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-between;
   -ms-flex-wrap: wrap;
@@ -204,9 +223,7 @@ Layout
       justify-content: space-around;
 }
 
-#work-id .-narrow {
-  /* background-color: #eee; */
-}
+
 
 .l-grid {
   margin-top: 4em;
@@ -291,13 +308,17 @@ Object
   margin: 1.5em 0 0 7em;
   border-radius: 40%;
   border: 10px solid #FCE38A;
-
 }
 
-.profile__content {
+
+/* @media screen and (min-width: 768px) {
+  .profile__content {
   overflow: hidden;
   float: right;
 }
+
+} */
+
 
 .profile__content dt {
   float: left;
