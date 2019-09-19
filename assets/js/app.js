@@ -5,6 +5,12 @@ $(function () {
       scrollTop: 0
     }, 500);
   });
+  // ロゴリンクスクロール
+  $('.js-logo').click(function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+  });
 
   // ページ内リンクスクロール
   $('a[href^="#"]').click(function () {
