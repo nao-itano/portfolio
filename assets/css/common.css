@@ -100,14 +100,14 @@ Layout
 
 /****** header ******/
 .l-header {
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: .75em 0;
   background-color: #fafafa;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: 2;
 }
 
 .l-header__title {
@@ -131,7 +131,7 @@ Layout
   padding: 3em;
   width: 100%;
   height: 120%;
-  z-index: 2;
+  z-index: 4;
   background-color: rgba(255, 165, 0, .92);
   -webkit-transition: -webkit-transform .3s ease-in-out;
   transition: -webkit-transform .3s ease-in-out;
@@ -146,6 +146,7 @@ Layout
       -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
+
 }
 
 .l-header__nav {
@@ -645,12 +646,12 @@ Object
 
 
 
-/* work */
+/********* work *********/
 .work {
   background-color: rgba(252,210,113,.5);
   width: 100%;
 }
-/* tag */
+/******** tag *********/
 .card__tag {
   z-index: 1;
   font-size: .8em;
@@ -674,7 +675,7 @@ Object
 
 
 
-/* card */
+/******** card ********/
 .card {
   width: 285px;
   position: relative;
@@ -723,16 +724,16 @@ Object
   line-height: 1.25em;
 }
 
-/**** button *****/
-/* hamburger */
+/******** button *********/
+/**** hamburger ****/
 .button-hamburger {
   position: absolute;
   top: 0;
-  right: 2.5%;
+  right: 5%;
   bottom: 0;
   z-index: 1;
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
   margin: auto 0;
   border: 0;
   outline: 0;
