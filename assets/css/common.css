@@ -53,9 +53,7 @@ html{
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%;
-  font: 'Noto Sans JP', medium/1.5 '游ゴシック', 'Yu Gothic', '游ゴシック体', 'YuGothic',
-'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro',
-'Meiryo UI', 'メイリオ', Meiryo, sans-serif;
+  font: medium/1.5 ,'Noto Sans JP', '游ゴシック', 'Yu Gothic', '游ゴシック体', 'YuGothic', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo UI', 'メイリオ', Meiryo, sans-serif;
   line-height: 1.5;
 }
 
@@ -155,9 +153,10 @@ Layout
 
 .l-global-nav a {
   display: block;
-  padding: 1.25em;
+  padding: 2em 0 1em .5em;
   text-decoration: none;
   color: #fafafa;
+  border-bottom: 1.5px solid rgba(255, 255, 255, .5);
 }
 
 .l-global-nav a:hover {
@@ -831,7 +830,7 @@ Object
 }
 
 .card__button {
-  margin: 0 1em;
+  margin: 1.25em 1em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -841,9 +840,7 @@ Object
           justify-content: space-between;
 }
 
-.-onlyGit {
-  margin-left: 2.890625em;
-}
+
 
 .button.-more {
   font-size: .875em;
@@ -858,7 +855,10 @@ Object
   margin: 0 auto 1em;
   -webkit-box-shadow: 0px 3px 5px rgba(192,192,192,.25);
           box-shadow: 0px 3px 5px rgba(192,192,192,.25);
+}
 
+.only {
+  margin: 0 auto;
 }
 
 .button.-more:before,
@@ -889,6 +889,7 @@ Object
   background-color: #ffd700;
   color: #fff;
   border-color: #ffd700;
+  cursor: pointer;
 }
 
 .button.-more:hover:before {
