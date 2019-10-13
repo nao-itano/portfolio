@@ -53,7 +53,7 @@ html{
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%;
-  font: medium/1.5 ,'Noto Sans JP', '游ゴシック', 'Yu Gothic', '游ゴシック体', 'YuGothic', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo UI', 'メイリオ', Meiryo, sans-serif;
+  font: medium/1.5 'Noto Sans JP', '游ゴシック', 'Yu Gothic', '游ゴシック体', 'YuGothic', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo UI', 'メイリオ', Meiryo, sans-serif;
   line-height: 1.5;
 }
 
@@ -164,6 +164,8 @@ Layout
 }
 
 
+
+
 @media screen and (min-width: 768px) {
   .l-header__nav button {
     display: none;
@@ -230,6 +232,12 @@ Layout
   }
 }
 
+/******** update *********/
+.l-update {
+  width: 65%;
+  margin: 0 auto;
+}
+
 
 /****** l-skill__contetns ******/
 .skill__wraper {
@@ -279,7 +287,8 @@ Layout
 }
 
 .l-footer {
-  padding-top: 1em;
+  padding-top: 2em;
+  background-color: #fafafa;
 }
 
 .l-footer__nav .l-nav__item {
@@ -420,6 +429,32 @@ Object
     font-weight: bold;
   }
 }
+
+/********** update ***********/
+.title.-tertiary {
+  border-left: 3px solid #ffa500;
+  padding-left: .35em;
+}
+.wrap-update {
+  height: 13em;
+  overflow: scroll;
+  border: 1px solid #ddd;
+  padding: 1.25em;
+  font-size: .875em;
+  margin-top: 1em;
+}
+
+.update_date {
+  float: left;
+}
+
+.update_content {
+  padding-left: 7em;
+  margin-bottom: .9em;
+  padding-bottom: .9em;
+  border-bottom: 2px dotted rgba(255, 165, 0, .7);
+}
+
 
 /********** profile **********/
 .l-section.profile {
@@ -663,12 +698,12 @@ Object
 }
 
 .card__tag.-new {
-  background-color: #ef857d;
+  background-color:#ef857d;
   position: absolute;
 }
 
-.card__tag.-old {
-  background-color: #a9a9a9;
+.card__tag.-normal {
+  background-color: #909090;
   position: absolute;
 }
 
@@ -720,8 +755,12 @@ Object
   font-size: .875em;
   margin-bottom: 1em;
   min-height: 7em;
-  line-height: 1.25em;
+  line-height: 1.3em;
 }
+
+
+
+
 
 /******** button *********/
 /**** hamburger ****/
@@ -830,9 +869,8 @@ Object
 }
 
 .card__button {
-  margin: 1.25em 1em 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin: 1.25em auto 0;
+  width: 100px;
   display: flex;
   text-align: center;
   -ms-flex-pack: distribute;
@@ -858,7 +896,7 @@ Object
 }
 
 .only {
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .button.-more:before,
@@ -950,29 +988,85 @@ Object
 
 }
 
-  /* contact */
+/******************** お問い合わせページ ********************/
+/* contact */
   .l-section.contact {
-    background-color: #fafafa;
-  }
-
-  .contact__title {
-    margin: 3em 0 1em;
-  }
-
-  .contact__mail a {
-    text-decoration: none;
-    color: #666;
-    padding: 1em;
+    background-color: #fff;
   }
 
   .contact__mail a:hover {
     color: #888;
   }
 
+  .l-form {
+    margin: 4em auto;
+    padding: 3em 0 3em;
+    width: 500px;
+    background-color: #fffaf0;
+  }
+
+  .form__title {
+    margin-bottom: .75em;
+  }
+
+  .form__content {
+    margin-bottom: 2em;
+  }
+
+  .form__size {
+    width: 200px;
+  }
+
+  .form__button {
+    font-size: .875em;
+    border-style: none;
+    background-color: #ffe4b5;
+    padding: .75em;
+    border-radius: 5px;
+  }
+
+  .form__button:hover {
+    cursor: pointer;
+    background-color: #ffdead;
+  }
+
+.l-contact-page {
+  width: 70%;
+  margin: 3em auto 15em;
+}
 
 
+.heading.-form {
+  margin: 2em 0;
+}
 
+.button.-conf {
+  float: left;
+  margin: 1em 1em 4em 0;
+}
 
+.contact__content {
+  margin: 2em 0;
+  line-height: 1.5;
+}
+
+.address {
+  color: #6495ed;
+}
+
+.error__address {
+  margin-bottom :3em;
+}
+
+.error-message {
+  font-size: .875em;
+  color: #fa8072;
+  margin-top: .3em;
+}
+
+.button.-contact {
+  width: 150px;
+}
 
 
 /*
