@@ -3,8 +3,8 @@
   <main class="l-main">
     <div class="l-hero">
       <picture class="hero__image">
-        <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-sp.jpg 1x, <?php echo esc_url(get_template_directory_uri()); ?>assets/images/hero-sp@2x.jpg 2x" media="(max-width: 767px)">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero.jpg" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero.jpg 1x, /assets/images/hero@2x.jpg 2x" alt="板野なおのポートフォリオサイト">
+        <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-sp.jpg 1x, <?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-sp@2x.jpg 2x" media="(max-width: 767px)">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero.jpg" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero.jpg 1x, <?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero@2x.jpg 2x" alt="板野なおのポートフォリオサイト">
       </picture>
       <div class="hero__body">
         <p class="l-hero__title"><span class="hero__tag">&lt;em&gt;</span><span class="hero__em">やさしい</span><span
@@ -14,7 +14,6 @@
       </div>
     </div>
     <!-- /.l-hero -->
-
     <section class="l-section l-container">
       <div class=" l-update">
         <h2 class="title -tertiary">ポートフォリオ更新履歴</h2>
@@ -22,10 +21,14 @@
         <?php
           $loop = new WP_Query(array("post_type" => "update"));
                 if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post(); ?>
+
             <dt class="update_date"><?php the_time( get_option( 'date_format' ) ); ?></dt>
             <dd class="update_content"><?php the_title(); ?></dd>
+
+
         <?php endwhile; endif;  ?>
         </dl>
+
       </div>
     </section>
 
@@ -35,13 +38,16 @@
           <h2 class="heading -primary">プロフィール</h2>
           <h3 class="heading -secondary">音楽よりも、料理よりも、<br>今は勉強がたのしい</h3>
         </hgroup>
+
         <section class="l-profile__primary">
           <div class="profile__picture text-center">
             <picture>
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile-sp.jpg 1x, <?php echo esc_url(get_template_directory_uri()); ?>assets/images/profile-sp@2x.jpg 2x" media="(max-width: 767px)">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile.jpg" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile.jpg 1x, assets/images/profile@2x.jpg 2x" alt="板野なおのプロフィール写真">
+              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile-sp.jpg 1x, <?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile-sp@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile.jpg" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile.jpg 1x, <?php echo esc_url(get_template_directory_uri()); ?>/assets/images/profile@2x.jpg 2x" alt="板野なおのプロフィール写真">
             </picture>
           </div>
+
+
           <div class="profile__content">
             <dl class="profile__list">
               <dt>名前</dt>
@@ -98,8 +104,8 @@
         </div>
         <!-- /.detail__content -->
         <picture class="detail__img -music">
-          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/music-sp.png 1x, <?php echo esc_url(get_template_directory_uri()); ?>assets/images/music-sp@2x.png 2x" media="(max-width: 767px)">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/music.png" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/music.png 1x, assets/images/music@2x.png 2x" alt="ヘッドフォンのイラスト">
+          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/music-sp.png 1x, <?php echo esc_url(get_template_directory_uri()); ?>/assets/images/music-sp@2x.png 2x" media="(max-width: 767px)">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/music.png" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/music.png 1x, <?php echo esc_url(get_template_directory_uri()); ?>/assets/images/music@2x.png 2x" alt="ヘッドフォンのイラスト">
         </picture>
       </section>
       <!-- /.profile__detail-1 -->
@@ -114,9 +120,10 @@
           </p>
           <!-- <p class="detail__text">まだまだ勉強を始めたばかりですが、この先、誰に対しても「自分が作ったから大丈夫」と思えるようなアクセシビリティを意識したものを作れるエンジニアになりたいです。</p> -->
         </div>
+
         <picture class="detail__img -pc">
-          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/pc2-sp.png 1x, <?php echo esc_url(get_template_directory_uri()); ?>assets/images/pc2-sp@2x.png 2x" media="(max-width: 767px)">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/pc2.png" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/pc2.png 1x, assets/images/pc2@2x.png 2x" alt="パソコンのイラスト">
+          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/pc2-sp.png 1x, <?php echo esc_url(get_template_directory_uri()); ?>/assets/images/pc2-sp@2x.png 2x" media="(max-width: 767px)">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/pc2.png" srcset="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/pc2.png 1x, <?php echo esc_url(get_template_directory_uri()); ?>/assets/images/pc2@2x.png 2x" alt="パソコンのイラスト">
         </picture>
       </section>
       <!-- /.profile-detail-2 -->
