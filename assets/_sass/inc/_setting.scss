@@ -1,0 +1,19 @@
+// 変数宣言
+
+// メインカラー
+$main-color: #ffa500;
+
+// サブカラー
+$sub-color: #fafafa;
+
+// サイト幅
+$narrow-width: 1040px;
+
+// スマートフォン用
+$tab: 768px;
+$lap: 1024px;
+@mixin mq($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}

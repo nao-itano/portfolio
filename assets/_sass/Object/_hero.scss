@@ -1,0 +1,59 @@
+/* =====================================================
+Object
+===================================================== */
+/*** hero ***/
+.l-hero {
+  position: relative;
+}
+
+.hero {
+  &__body {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    letter-spacing: .2em;
+    transform: translate(-50%, -50%);
+  }
+  &__tag {
+    font-size: 3.25vw;
+  }
+  &__em {
+    font-size: 4.5vw;
+    font-weight: bold;
+    padding: 0 .3em;
+  }
+  &__text {
+    display: inline-block;
+    font-size: 3vw;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  &__name {
+    font-size: 2.5vw;
+  }
+  &__image img {
+    width: 100%;
+  }
+}
+
+@include mq($tab) {
+  .hero {
+    &__body {
+      position: absolute;
+      top: 43%;
+      left: 37%;
+    }
+    &__tag {
+      font-size: 3.25vw;
+    }
+    &__em {
+      font-size: 4.3vw;
+    }
+    &__text {
+      font-size: 2.5vw;
+    }
+    &__name {
+      font-size: 2vw;
+    }
+  }
+}

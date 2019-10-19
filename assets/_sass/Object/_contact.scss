@@ -1,0 +1,73 @@
+/*** contact ***/
+
+.l-section.contact {
+  background-color: #fff;
+}
+
+.l-form {
+  margin: 4em auto;
+  padding: 3em 0;
+  width: 80%;
+  background-color: #fffaf0;
+}
+
+.form {
+  &__title {
+    margin-bottom: .75em;
+  }
+  &__content {
+    margin-bottom: 2em;
+  }
+  &__size {
+    width: 150px;
+  }
+  &__button {
+    font-size: .875em;
+    border-style: none;
+    background-color: lighten($main-color, 30%);
+    padding: .75em;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: lighten($main-color, 35%);
+    }
+  }
+}
+
+.l-contact-page {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.heading.-form {
+  margin: 2em 0;
+}
+
+.button.-conf {
+  float: left;
+  margin: 1em 1em 4em 0;
+}
+
+.contact__content {
+  margin: 2em 0;
+  line-height: 1.5;
+}
+
+.address {
+  color: #6496ed;
+}
+
+.error__address {
+  margin-bottom: 3em;
+}
+
+.error-message {
+  font-size: .875em;
+  color: #fa8072;
+  margin-top: .3em;
+}
+
+.button.-contact {
+  width: 150px;
+}

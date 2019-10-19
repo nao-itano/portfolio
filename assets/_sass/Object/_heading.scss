@@ -1,0 +1,30 @@
+/*** heading ***/
+.heading {
+  &.-primary {
+    display: inline-block;
+    font-size: .875em;
+    border-bottom: 4px solid $main-color;
+    padding-bottom: .7em;
+  }
+  &.-secondary {
+    font-size: 1.2em;
+    padding: .5em 0;
+    line-height: 1.8em;
+    font-weight: bold;
+  }
+  &.-tertiary {
+    border-left: 3px solid #ffa500;
+    padding-left: .35em;
+  }
+}
+
+@include mq($tab) {
+  .heading {
+    &.-primary {
+      font-size: 1.5em;
+    }
+    &.-secondary {
+      font-size: 2em;
+    }
+  }
+}

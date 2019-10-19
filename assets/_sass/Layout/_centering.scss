@@ -1,0 +1,20 @@
+/*
+Layout
+-----------------------------------------------------*/
+/*** centering ***/
+
+.l-container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.l-container.-narrow {
+  max-width: $narrow-width;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}

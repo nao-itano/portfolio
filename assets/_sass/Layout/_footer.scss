@@ -1,0 +1,36 @@
+/*** footer ***/
+.l-footer__logo,
+.l-footer__nav {
+  display: none;
+}
+
+.l-footer {
+  padding-top: 2em;
+  background-color: $sub-color;
+
+  &__nav .l-nav__item {
+    display: inline-block;
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: #666;
+      padding: 1em 4em;
+      text-align: center;
+    }
+  }
+
+  .l-container {
+    text-align: center;
+  }
+
+  &__copyright {
+    padding: 2em 0;
+    font-size: .875em;
+  }
+}
+
+.footer__git {
+  margin: 0 5em;
+  padding: 1em;
+}

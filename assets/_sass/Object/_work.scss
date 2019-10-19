@@ -1,0 +1,64 @@
+/*** work ***/
+.work {
+  width: 100%;
+  background-color: rgba(252,210,113,.5);
+}
+
+/*** tag ***/
+.card__tag {
+  z-index: 1;
+  font-size: .8em;
+  padding: .6em;
+  color: #fff;
+  position: absolute;
+  top: -2.1em;
+  right: 1em;
+  border-radius: 2px;
+  letter-spacing: .2em;
+  background-color: #909090;
+}
+
+/*** card ***/
+.card {
+  width: 285px;
+  position: relative;
+  padding: 13em 1em 1.5em;
+  border-radius: 20px;
+  background-color: $sub-color;
+  box-shadow: 0px 5px 20px rgba(192,192,192,.25);
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__list {
+    font-size: .75em;
+    padding: .75em 0 1.25em;
+
+    dt {
+      display: inline-block;
+    }
+    dd {
+      display: inline-block;
+    }
+    li {
+      display: inline-block;
+    }
+  }
+
+  &__text {
+    font-size: .875em;
+    margin: 1em 0;
+    min-height: 7em;
+    line-height: 1.3;
+  }
+}

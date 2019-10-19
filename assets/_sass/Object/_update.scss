@@ -1,0 +1,32 @@
+/*** update ***/
+.update {
+  &__wrap {
+    height: 13em;
+    overflow: scroll;
+    border: 1px solid #ddd;
+    padding: 1.25em;
+    font-size: .875em;
+    margin-top: 1em;
+  }
+
+  &__date {
+    color: #a9a9a9;
+    padding-bottom: .5em;
+  }
+  &__content {
+    margin-bottom: .9em;
+    padding-bottom: .9em;
+    border-bottom: 2px dotted lighten($main-color, 10%);
+  }
+}
+
+@include mq($tab) {
+  .update {
+    &__date {
+      float: left;
+    }
+    &__content {
+      padding-left: 7em;
+    }
+  }
+}

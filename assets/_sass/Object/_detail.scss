@@ -1,0 +1,72 @@
+/*** detail ***/
+
+.detail {
+  &__title {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.25;
+  }
+
+  &__text {
+    font-size: .9875em;
+    padding-top: 1.5em;
+    line-height: 1.2;
+  }
+
+  &__content {
+    text-align: left;
+    margin: 4em 0;
+  }
+
+  &__img {
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+}
+
+.profile-detail {
+  text-align: center;
+  padding: 0 1em;
+}
+
+.l-container.-detail {
+  margin-top: -3em;
+}
+
+@include mq($tab) {
+  .detail {
+    &__title {
+      font-size: 1.5em;
+      clear: both;
+    }
+
+    &__img.-music {
+      float: right;
+      margin: 4em 3em 0 0;
+    }
+
+    &__img.-pc {
+      float: left;
+      margin: 5em 0 3em 0;
+    }
+
+    &__text {
+      line-height: 1.5;
+    }
+  }
+
+  .profile__detail {
+    margin-top: 2em;
+    overflow: hidden;
+
+    &.-primary .detail__content {
+      float: left;
+      width: 60%;
+    }
+    &.-secondary .detail__content {
+      float: right;
+      width: 65%;
+    }
+  }
+}

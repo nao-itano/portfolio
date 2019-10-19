@@ -1,0 +1,106 @@
+/*** header ***/
+.l-header {
+  padding: .75em 0;
+  background-color: $sub-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.l-header {
+  &__title {
+    float: left;
+    margin: .5em 5em 0 0;
+  }
+
+  &__icon {
+    display: none;
+  }
+
+  &__nav {
+    float: right;
+  }
+}
+
+/*** スマホ用nav ***/
+.l-global-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 3em;
+  width: 100%;
+  height: 120%;
+  z-index: 4;
+  background-color: rgba(255, 165, 0, .92);
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.is-active-drawer .l-global-nav {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.l-global-nav a {
+  display: block;
+  padding: 2em 0 1em .5em;
+  text-decoration: none;
+  color: $sub-color;
+  border-bottom: 1.5px solid rgba(255, 255, 255, .5);
+
+  &:hover {
+    background-color: rgba(252,210,113,.5);
+  }
+}
+
+/*** PC用 ***/
+@include mq($tab) {
+  .l-header {
+    &__nav {
+      float: left;
+      text-align: center;
+      font-size: 0;
+
+      button {
+        display: none;
+      }
+    }
+
+    &__icon {
+      display: block;
+      float: right;
+      margin-top: .5em;
+    }
+  }
+
+  .l-global-nav {
+    position: static;
+    padding: 0;
+    background-color: transparent;
+    width: 100%;
+    transform: translateX(0);
+  }
+
+  .l-nav__item {
+    display: inline-block;
+    font-size: medium;
+    margin-top: .5em;
+
+    a {
+      padding: 1em 1.5em;
+      display: block;
+      text-decoration: none;
+      color: #666;
+    }
+  }
+}
