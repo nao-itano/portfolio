@@ -64,6 +64,16 @@
     width: 2em;
     height: 2em;
   }
+  &__item.wordpress:after {
+    background-color: #4169e1;
+    width: 2em;
+    height: 2em;
+  }
+  &__item.sass:after {
+    background-color: darken(#f0e68c, 15);
+    width: 2em;
+    height: 2em;
+  }
   &__item.cubase:after {
     background-color: #ae8dbc;
     width: 2.5em;
