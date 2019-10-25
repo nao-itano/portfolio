@@ -155,6 +155,8 @@
           <li class="l-skill__contents skill__item php">PHP</li>
           <li class="l-skill__contents skill__item mysql">MySQL</li>
           <li class="l-skill__contents skill__item xd">Adobe XD</li>
+          <li class="l-skill__contents skill__item wordpress">WordPress</li>
+          <li class="l-skill__contents skill__item sass">Sass</li>
           <li class="l-skill__contents skill__item cubase">cubase10</li>
         </ul>
       </div>
