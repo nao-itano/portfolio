@@ -660,6 +660,18 @@ Object
   height: 2em;
 }
 
+.skill__item.wordpress:after {
+  background-color: #4169e1;
+  width: 2em;
+  height: 2em;
+}
+
+.skill__item.sass:after {
+  background-color: #e7d748;
+  width: 2em;
+  height: 2em;
+}
+
 .skill__item.cubase:after {
   background-color: #ae8dbc;
   width: 2.5em;
