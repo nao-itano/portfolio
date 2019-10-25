@@ -9,21 +9,31 @@
       <div class="hero__body">
         <p class="l-hero__title"><span class="hero__tag">&lt;em&gt;</span><span class="hero__em">やさしい</span><span
             class="hero__tag">&lt;/em&gt;</span><br><span
-            class="hero__text">フロントエンドエンジニアを目指して2ヶ月</span><br><span class="hero__name">板野なおのポートフォリオサイト</span>
+            class="hero__text">フロントエンドエンジニアを目指して<?php
+            $date = '2019-08-01 15:00:00';
+            $day1 = new Datetime($date);
+            $day2 = new Datetime();
+            $day1 ->modify('noon');
+            $day2 ->modify('noon');
+            $interval = $day2->diff($day1);
+            $interval_day = (int)$interval->format('%a');
+            echo esc_html("{$interval_day}日");
+            ?>
+            </span><br><span class="hero__name">板野なおのポートフォリオサイト</span>
         </p>
       </div>
     </div>
     <!-- /.l-hero -->
     <section class="l-section l-container">
       <div class=" l-update">
-        <h2 class="title -tertiary">ポートフォリオ更新履歴</h2>
-        <dl class="wrap-update">
+        <h2 class="heading -tertiary">ポートフォリオ更新履歴</h2>
+        <dl class="update__wrap">
         <?php
           $loop = new WP_Query(array("post_type" => "update"));
                 if ( $loop->have_posts() ) : while($loop->have_posts()): $loop->the_post(); ?>
 
-            <dt class="update_date"><?php the_time( get_option( 'date_format' ) ); ?></dt>
-            <dd class="update_content"><?php the_title(); ?></dd>
+            <dt class="update__date"><?php the_time( get_option( 'date_format' ) ); ?></dt>
+            <dd class="update__content"><?php the_title(); ?></dd>
 
 
         <?php endwhile; endif;  ?>
